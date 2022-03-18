@@ -12,6 +12,35 @@ class Entity:
         self.current_hp = 0
         self.temp_hp = 0
 
+    def set_ancestry(self, new_ancestry):
+        self.ancestry = new_ancestry
+
+    def set_size(self, new_size):
+        if new_size in SIZE:
+            self.size = new_size
+
+    def set_level(self, new_level):
+        if type(new_level) == int:
+            self.level = new_level
+
+    def set_alignment(self, new_alignment):
+        if new_alignment in ALIGNMENT:
+            self.alignment = new_alignment
+
+    def set_max_hp(self, new_max_hp):
+        if type(new_max_hp) == int:
+            self.max_hp = new_max_hp
+
+    def set_current_hp(self, new_hp):
+        if type(new_hp) == int:
+            self.current_hp = new_hp
+
+    def set_temp_hp(self, new_hp):
+        if type(new_hp) == int:
+            self.temp_hp = new_hp
+
+
+
 
 
 
