@@ -109,3 +109,6 @@ class Skill():
 
     def get_total(self):
         return self.proficiency_value + self.stat.modifier + self.item_bonus - self.armor_pen
+
+    def __repr__(self):
+        return f"{self.type}: {self.get_total()}"
